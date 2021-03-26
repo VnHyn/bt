@@ -31,5 +31,20 @@ namespace baitap
         {
 
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string user = "admin";
+            string pass = "admin";
+            if (user.Equals(txtusername.Text) && pass.Equals(txtpassword.Text))
+            {
+                MessageBox.Show("Ban Dang Nhap Thanh Cong");
+            }
+            else
+            {
+                MessageBox.Show("Ban Dang Nhap That bai");
+            } 
+                
+        }
     }
 }
